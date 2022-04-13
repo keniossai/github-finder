@@ -2,6 +2,7 @@ import React from 'react'
 import UserItems from './UserItems'
 import styled from 'styled-components'
 import Spinner from '../layouts/Spinner'
+import PropTypes from 'prop-types';
 
 const Users = ({ users, loading }) => {
 
@@ -16,6 +17,11 @@ const Users = ({ users, loading }) => {
             </UserCard>
         )
     }
+}
+
+Users.propTypes = {
+    users: PropTypes.array.isRequired,
+    loading: PropTypes.bool.isRequired
 }
 
 export default Users

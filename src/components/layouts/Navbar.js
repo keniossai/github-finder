@@ -8,7 +8,7 @@ const Navbar = ({icon, title}) => {
 return (
     <Nav className='navbar bg-info'>
         <div className="container">
-            <h3><i className={icon}></i>{title}</h3>
+            <h3><i className={icon}></i> {title}</h3>
         </div>
     </Nav>
     )
