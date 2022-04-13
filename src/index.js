@@ -1,9 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import createRoot from 'react-dom';
 import './index.css';
 import App from './App';
+// import { createRoot } from 'react-dom/cjs/react-dom.production.min';
 
-ReactDOM.render(
+createRoot.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
